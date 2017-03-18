@@ -1,0 +1,20 @@
+{
+  "name": "thevirtualforge",
+  "description": "",
+  "main": "public/index.html",
+  "authors": [
+    "Lee Jacobson <lee@leejacobson.co.uk>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.11"
+  }
+}

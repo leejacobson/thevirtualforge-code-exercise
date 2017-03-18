@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>The Virtual Forge - Technical Task</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Muli:300" rel="stylesheet">
+    <script src="js/scripts.js"></script>
+    <script type="text/javascript">
+    $(function() {
+      var dial1 = $('#dial-1').progressDial({
+        total: 3,
+        value: 1,
+        topText: "You are on level",
+        bottomText: "of 3",
+        color: '#c96'
+      });
+      
+      $('#dial1-btn').click(function() {
+        dial1.updateValue($(this).prev().val());
+      });
+      
+      var dial2 = $('#dial-2').progressDial({
+        total: 100,
+        value: 30,
+        unit: '%',
+        topText: "You have completed",
+        bottomText: "of level 1"
+      });
+      
+      $('#dial2-btn').click(function() {
+        dial2.updateValue($(this).prev().val());
+      });
+    });
+    </script>
+  </head>
+  <body>
+    <div style="float:left; text-align:center;"><div id="dial-1"></div> <input type="text" value="1" size="2" /> <button id="dial1-btn">Update</button></div>
+    <div style="float:left; text-align:center;"><div id="dial-2"></div> <input type="text" value="30" size="2" /> <button id="dial2-btn">Update</button></div>
+  </body>
+</html>
